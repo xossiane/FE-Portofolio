@@ -1,0 +1,34 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "@nuxtjs/storybook": "^4.3.2",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.58.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-beta.47",
+    "@storybook/addon-interactions": "^7.0.0-beta.47",
+    "@storybook/addon-links": "^7.0.0-beta.47",
+    "@storybook/blocks": "^7.0.0-beta.47",
+    "@storybook/nextjs": "^7.0.0-beta.47",
+    "@storybook/react": "^7.0.0-beta.47",
+    "@storybook/testing-library": "^0.0.14-next.1",
+    "eslint-plugin-storybook": "^0.6.10",
+    "storybook": "^7.0.0-beta.47"
+  }
+}
