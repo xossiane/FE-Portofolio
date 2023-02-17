@@ -1,0 +1,19 @@
+@use 'src/styles/main' as *;
+.counterCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-height: 17.6rem;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding: 1.8rem 4.8rem 1.8rem 4.8rem;
+    border: 0.1rem solid $orange-light;
+    border-radius: 0.5rem;
+    background-color: $orange-lighter;
+   &__number{
+    display: flex;
+    flex-direction: row;
+   }
+    
+}
