@@ -1,6 +1,12 @@
 .CCWrapper{
     display: flex;
-    flex-direction: row;
-    width: fit-content;
-    margin: auto;
+    flex-direction: column;
+    min-width: 100%;
+    @media (min-width: 850px){
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        margin: auto;
+    }
+   
 }

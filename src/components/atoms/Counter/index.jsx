@@ -1,4 +1,6 @@
 import { useSpring, animated } from 'react-spring';
+import styles from './styles.module.scss'
+
 
 function abbrNum(number, decPlaces) {
     if (number > 10000){
@@ -44,9 +46,10 @@ function Counter ({n}) {
 
     });
     
-    return <span><animated.div>{number.to((n) => (n.toFixed(0))) }</animated.div>{counterLetter}</span>
+    return <span className={styles.Counter}><animated.div>{number.to((n) => Math.floor(n).toLocaleString("de")) }</animated.div>{counterLetter}</span>
    
 }
+
 
 
 export default Counter;
