@@ -1,6 +1,7 @@
 import { useSpring, animated } from 'react-spring';
 
 function abbrNum(number, decPlaces) {
+    if (number > 10000){
     // 2 decimal places => 100, 3 => 1000, etc
     decPlaces = Math.pow(10,decPlaces);
 
@@ -20,26 +21,30 @@ function abbrNum(number, decPlaces) {
              number = Math.round(number*decPlaces/size)/decPlaces;
 
              // Add the letter for the abbreviation
-            /*  number = abbrev[i]; */
+            var  conterAbbrev = abbrev[i];
 
              // We are done... stop
              break;
         }
     }
-
-    return number;
+    }
+    return [number, conterAbbrev];
 } 
 
+
+
 function Counter ({n}) {
+    const counterValue = abbrNum(n,1)[0];
+    const counterLetter = abbrNum(n,1)[1];
     const { number } = useSpring({
-        from: {number: 0},
-        number: abbrNum(n, 1),
+        from: 0,
+        number: counterValue,
         delay: 200,
         config: { mass: 1 , tension: 8, friction: 20 },
 
     });
     
-    return <span><animated.div>{number.to((n) => (n.toFixed(0))) }</animated.div></span>
+    return <span><animated.div>{number.to((n) => (n.toFixed(0))) }</animated.div>{counterLetter}</span>
    
 }
 
