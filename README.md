@@ -1,8 +1,24 @@
+## Portfolio Test
+This project aims to develop some components which may seem hard to do.
+
+## Table of Contents
+
+Article Hero
+Hero
+Section Title
+ImageCards Grid
+Testimonials 
+Counter Grid
+
+## How to install and run the project
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+First, run: 
+npm i 
+for dependencies then run the development server:
 
 ```bash
 npm run dev
@@ -11,6 +27,8 @@ yarn dev
 # or
 pnpm dev
 ```
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

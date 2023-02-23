@@ -1,4 +1,4 @@
-import '../styles/main.scss'	
+
 import '../styles/globals/reset.scss'	
 
 import Layout from '@/layout/default.jsx'
