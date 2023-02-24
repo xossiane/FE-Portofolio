@@ -1,5 +1,4 @@
 
-
 /* fonts: large, medium, small
 size: 14px, 18px, 22px;
  */
@@ -26,6 +25,9 @@ size: 14px, 18px, 22px;
   }
   &--darkBrown {
     color: $brown-dark;
+  }
+  &--lightOrange {
+    color: $orange-light;
   }
   &--white {
     color: $white;

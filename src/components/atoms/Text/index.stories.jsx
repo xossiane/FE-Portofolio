@@ -3,6 +3,7 @@ import Text from ".";
 export default {
   title: "Atoms/Text",
   component: Text,
+  tags: ["autodocs"],
   args: {
     color: "black",
     size: "medium",
@@ -12,15 +13,15 @@ export default {
   argTypes: {
     color: {
       control: "inline-radio",
-      options: ["black"]
+      options: ["black", "darkBrown", "lightOrange"]
     },
     size: {
       control: "inline-radio",
-      options: ["XXLarge", "XLarge", "large", "medium", "small", "XSmall"]
+      options: ["XLarge", "large", "medium", "small", "XSmall"]
     },
     weight: {
       control: "inline-radio",
-      options: ["bold", "italic", ""]
+      options: ["bold", "italic", "normal"]
     }
   }
 };
