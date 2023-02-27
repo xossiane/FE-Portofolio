@@ -1,0 +1,100 @@
+.Hero{
+   
+        @include hero;
+   
+    &__container{
+        display: flex;
+        @include respond-to("md"){
+            flex-direction: row;
+          
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        @include respond-to("md"){
+            display: flex;
+            flex-direction: column;
+            padding: 6.5rem;
+          
+        }
+    }
+    &__img{
+        display: flex;
+    margin: 0 auto;
+    
+    }
+    &__title{
+        min-width: 30.7rem;
+        padding-bottom: 1.45rem;
+        padding-top: 0.85rem;
+        display: flex;
+    }
+    &__category{
+        padding-bottom: 0.85rem;
+    }
+    &__subtitle{
+        padding-top: 1.45rem;
+    }
+    &__description{
+        padding-top: 0.9rem;
+    }
+
+    @include respond-to("md"){
+        flex-direction: row;
+        display: flex;
+    align-items: center;
+      
+    }
+}
+
+.HeroVariation{
+   
+    @include hero;
+background-color: $blue-dark;
+&__container{
+    display: flex;
+    @include respond-to("md"){
+        flex-direction: row;
+      
+    }
+}
+&__info{
+    display: flex;
+    flex-direction: column;
+    @include respond-to("md"){
+        display: flex;
+        flex-direction: column;
+        padding: 6.5rem;
+      
+    }
+}
+&__img{
+    display: flex;
+margin: 0 auto;
+
+}
+&__title{
+    min-width: 30.7rem;
+    padding-bottom: 1.45rem;
+    padding-top: 0.85rem;
+    display: flex;
+}
+&__category{
+    padding-bottom: 0.85rem;
+}
+&__subtitle{
+    padding-top: 1.45rem;
+}
+&__description{
+    padding-top: 0.9rem;
+}
+
+@include respond-to("md"){
+    flex-direction: row;
+    display: flex;
+align-items: center;
+  
+}
+}
+
