@@ -12,6 +12,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.11",
     "@next/font": "^13.1.6",
     "@nuxtjs/storybook": "^4.3.2",
     "eslint": "8.34.0",
