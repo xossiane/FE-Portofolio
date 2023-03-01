@@ -8,6 +8,7 @@ export default function Home() {
       <p>Home</p>
       <CCWrapper></CCWrapper>
       <Hero
+        img="/hero.png"
         category="ABOUT"
         title="An Experience 
 Design Agency"
@@ -15,6 +16,7 @@ Design Agency"
         description="Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team."
       ></Hero>
       <Hero
+        img="/hero2.png"
         category="ABOUT"
         title="An Experience 
         Webflow Expert"

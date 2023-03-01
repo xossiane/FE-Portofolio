@@ -5,7 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 import styles from './styles.module.scss'
 
-function Hero({category, title, subtitle, description, variation, className}) {
+function Hero({category, title, subtitle, description, variation, img}) {
   const classList = [];
   
   return (
@@ -13,7 +13,7 @@ function Hero({category, title, subtitle, description, variation, className}) {
     {variation ? (
       <section  className={styles.HeroVariation}>
       
-      <Image className={styles.HeroVariation__img} src="/hero2.png" width="329" height="340" alt="" />
+      <Image className={styles.HeroVariation__img} src={img} width="329" height="340" alt="" />
       
       <article className={styles.HeroVariation__info}>
       <Text className={styles.HeroVariation__category} size="medium" color="darkOrange" >{category}</Text>
@@ -37,7 +37,7 @@ function Hero({category, title, subtitle, description, variation, className}) {
     ) : (
       <section  className={styles.Hero}>
       
-      <Image className={styles.Hero__img} src="/hero.png" width="329" height="340" alt="" />
+      <Image className={styles.Hero__img} src={img} width="329" height="340" alt="" />
       
       <article className={styles.Hero__info}>
       <Text className={styles.Hero__category} size="medium" color="darkOrange" >{category}</Text>
