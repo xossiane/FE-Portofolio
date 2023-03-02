@@ -15,7 +15,7 @@ function Avatar({ name, img, enterprise }) {
         alt="avatar"
       />
       <div className={styles.Avatar__info}>
-        <Heading level="3" color="darkBrown">
+        <Heading level="4" color="darkBrown">
           {name}
         </Heading>
         <Text className={styles.Avatar__enterprise}>{enterprise}</Text>

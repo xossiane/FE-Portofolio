@@ -1,0 +1,17 @@
+.TestimonialsWrapper{
+  
+   padding: 0;
+    &__content{
+        grid-row: 2;
+        grid-column: 1;
+    @include respond-to ("lg"){
+        max-width: 1440px;
+    margin: 0 auto;
+    column-count: 2;
+    display: block;
+    margin: 0 auto;
+    column-gap: 0;
+    grid-column-end: span 2;
+      
+    }}
+}

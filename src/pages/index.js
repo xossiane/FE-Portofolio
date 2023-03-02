@@ -1,7 +1,7 @@
 import CCWrapper from "@/components/organisms/CCWrapper";
 import Hero from "@/components/molecules/Hero";
-import HeroWrapper from "@/components/organisms/HeroWrapper";
 import Testimonial from "@/components/molecules/Testimonials";
+import TestimonialsWrapper from "@/components/organisms/TestimonialsWrapper";
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ Design Agency"
         variation="variation"
       ></Hero>
 
-      <Testimonial></Testimonial>
+     <TestimonialsWrapper />
     </>
   );
 }
