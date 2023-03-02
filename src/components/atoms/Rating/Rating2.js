@@ -7,7 +7,8 @@ const Rating = ({
   precision = 1,
   totalStars = 5,
   emptyIcon = StarBorderIcon,
-  filledIcon = StarIcon
+  filledIcon = StarIcon,
+
 }) => {
   const [activeStar, setActiveStar] = useState(-1);
   const [hoverActiveStar, setHoverActiveStar] = useState(-1);
@@ -81,7 +82,7 @@ const Rating = ({
                 position: 'absolute'
               }}
             >
-              <FilledIcon sx={{width: '2rem', height: '2rem'}}/>
+              <FilledIcon sx={{width: '3rem', height: '3rem'}}/>
             </Box>
             {/*Note here */}
             <Box
@@ -90,7 +91,7 @@ const Rating = ({
                 
               }}
             >
-              {showEmptyIcon ? <EmptyIcon sx={{width: '2rem', height: '2rem'}} /> : <FilledIcon sx={{width: '2rem', height: '2rem'}} />}
+              {showEmptyIcon ? <EmptyIcon sx={{width: '3rem', height: '3rem'}} /> : <FilledIcon sx={{width: '3rem', height: '3rem'}} />}
             </Box>
           </Box>
         );

@@ -8,7 +8,7 @@ function Testimonial({text}) {
   return (
     <article className={styles.Testimonial}>
 <section className={styles.Testimonial__stars}>
-   <Rating precision={0.5}/>
+   <Rating precision={0.5} calculateRating={5}/>
   
 </section>
 <section  className={styles.Testimonial__text}>
