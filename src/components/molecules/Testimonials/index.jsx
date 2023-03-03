@@ -2,12 +2,12 @@ import Text from '@/components/atoms/Text'
 import styles from './styles.module.scss'
 import React from 'react'
 import Avatar from '../Avatar'
-import Rating from '@/components/atoms/Rating/Rating2'
+import Rating from '@/components/atoms/Rating/Rating'
 
 function Testimonial({text}) {
   return (
     <article className={styles.Testimonial}>
-<section className={styles.Testimonial__stars}>
+    <section className={styles.Testimonial__stars}>
    <Rating precision={0.5} calculateRating={5}/>
   
 </section>
