@@ -1,6 +1,7 @@
 import CCWrapper from "@/components/organisms/CCWrapper";
 import Hero from "@/components/molecules/Hero";
-import HeroWrapper from "@/components/organisms/HeroWrapper";
+import Testimonial from "@/components/molecules/Testimonials";
+import TestimonialsWrapper from "@/components/organisms/TestimonialsWrapper";
 
 export default function Home() {
   return (
@@ -24,6 +25,8 @@ Design Agency"
         description="Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team."
         variation="variation"
       ></Hero>
+
+     <TestimonialsWrapper />
     </>
   );
 }
