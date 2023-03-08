@@ -1,11 +1,27 @@
 .Card{
     display: flex;
-    
+   
     position: relative;
     &__img{
         display: flex;
         object-fit: cover;
         border-radius: 0.6rem;
+        box-shadow: 0 0 0 100px inset,
+        0 0 5px black;
+opacity: 0.32;
+&::after{
+    transition: all 2s .2s;
+}
+&:hover{
+    opacity: 100;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    &::after{
+        transition: opacity .5s;
+    
+    }
+}
+
         
     }
     &__content{
