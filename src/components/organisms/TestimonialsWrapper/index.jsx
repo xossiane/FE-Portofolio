@@ -9,7 +9,7 @@ function TestimonialsWrapper() {
   return (
     <span className={styles.TestimonialsWrapper}>
      
-      <SectionTitle title="What's my client saying?" subtitle="testimonials" isLeft={false} ></SectionTitle>
+      <SectionTitle title="What's my client saying?" color="white" subtitle="testimonials" isLeft={false} ></SectionTitle>
           <span className={styles.TestimonialsWrapper__content}>
           <Testimonials text={"1 A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you."}/>
         <Testimonials text={"2 Provide your business with a variety of digital solutions to promote your product or service online."}/>

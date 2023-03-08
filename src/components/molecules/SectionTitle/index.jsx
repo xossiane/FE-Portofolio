@@ -2,15 +2,16 @@ import Heading from "@/components/atoms/Heading";
 import React from "react";
 import styles from "./styles.module.scss";
 
-function SectionTitle({ title, subtitle, isLeft = false }) {
+function SectionTitle({ title, color, subtitle, isLeft = false }) {
+
   return (
     <>
       {isLeft ? (
         <span className={styles.SectionTitle__left}>
-          <Heading level="5" size="" color="darkOrange" pageTitle={true}>
+          <Heading level="5"  color="darkOrange" pageTitle={true}>
             {subtitle}
           </Heading>
-          <Heading level="2" color="black" pageTitle={false} isLeft={true}>
+          <Heading level="2" color={color} pageTitle={false} isLeft={true}>
             {title}
           </Heading>
         </span>
@@ -19,7 +20,7 @@ function SectionTitle({ title, subtitle, isLeft = false }) {
           <Heading level="5" size="" color="darkOrange" isLeft={false} pageTitle={true}>
             {subtitle}
           </Heading>
-          <Heading level="2" color="white" pageTitle={false}>
+          <Heading level="2" color={color} pageTitle={false}>
             {title}
           </Heading>
         </span>
