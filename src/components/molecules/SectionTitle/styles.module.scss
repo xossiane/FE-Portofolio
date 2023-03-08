@@ -1,0 +1,13 @@
+.SectionTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__left{
+        display: flex;
+        margin: 0 auto;
+        align-items: flex-start;
+        justify-content: start;
+        flex-direction: column;
+    }
+}
