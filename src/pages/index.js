@@ -2,6 +2,8 @@ import CCWrapper from "@/components/organisms/CCWrapper";
 import Hero from "@/components/molecules/Hero";
 import Testimonial from "@/components/molecules/Testimonials";
 import TestimonialsWrapper from "@/components/organisms/TestimonialsWrapper";
+import Card from "@/components/molecules/Card";
+
 
 export default function Home() {
   return (
@@ -26,7 +28,8 @@ Design Agency"
         variation="variation"
       ></Hero>
 
-     <TestimonialsWrapper />
+     <TestimonialsWrapper /> 
+     <Card name="hello world" img="/kiki.jpg"></Card>
     </>
   );
 }
