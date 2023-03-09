@@ -12,7 +12,7 @@ display: flex;
     padding-top: 3.5rem;
 
     &__content{
-        padding: 6.5rem;
+        padding: 4.5rem;
         grid-row: 2;
         grid-column: 1;
     @include respond-to ("xl"){

@@ -3,6 +3,7 @@ import Hero from "@/components/molecules/Hero";
 import Testimonial from "@/components/molecules/Testimonials";
 import TestimonialsWrapper from "@/components/organisms/TestimonialsWrapper";
 import Card from "@/components/molecules/Card";
+import CardsWrapper from "@/components/organisms/CardsWrapper";
 
 
 export default function Home() {
@@ -29,7 +30,7 @@ Design Agency"
       ></Hero>
 
      <TestimonialsWrapper /> 
-     <Card name="hello world" img="/kiki.jpg"></Card>
+    <CardsWrapper></CardsWrapper>
     </>
   );
 }

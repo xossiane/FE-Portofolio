@@ -1,7 +1,7 @@
 .Card{
     display: flex;
-   
     position: relative;
+    
     &__img{
         display: flex;
         object-fit: cover;
@@ -9,19 +9,35 @@
         box-shadow: 0 0 0 100px inset,
         0 0 5px black;
 opacity: 0.32;
-&::after{
-    transition: all 2s .2s;
+transition: all .2s ease-in-out;
+min-height: 370px;
+margin-bottom: 3rem;
+
+
+@include respond-to("md"){
+    margin-bottom: 0;
+   
 }
+@include respond-to("lg"){
+  
+   
+}
+
 &:hover{
     opacity: 100;
     transition: all .2s ease-in-out;
     transform: scale(1.1);
     &::after{
-        transition: opacity .5s;
+        /* transition: opacity .5s; */
     
     }
+    &::after{
+    transition: all .2s ease-in-out;
 }
-
+}
+&::after{
+    transition: all .2s ease-in-out;
+}
         
     }
     &__content{
@@ -30,5 +46,23 @@ opacity: 0.32;
         bottom: 0;
         z-index: 9;
         padding: 4.8rem;
+        
     }
+
+
+   
+    
+}
+
+.Card--isDefault{
+   order: -1;
+  
+   @include respond-to("md"){
+    display: grid;
+    grid-row: auto;
+    grid-column: span 2;
+    height: 100%;
+    width: 100%;
+    
+   }
 }

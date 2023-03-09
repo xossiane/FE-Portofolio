@@ -1,0 +1,29 @@
+.CardsWrapper{
+   
+&__container{
+  padding: 3rem;
+
+    @include respond-to("md"){ 
+      
+        grid-template-columns: 1fr 1fr;
+        display: inline-grid;
+        row-gap: 2.4rem;
+        column-gap: 3rem;
+        justify-items: center;
+        padding: 3rem;
+        grid-template-rows: auto;
+   
+
+}
+    @include respond-to("lg"){ 
+      
+        grid-template-columns: auto ;
+        display: inline-grid;
+        row-gap: 2.4rem;
+        column-gap: 3rem;
+        justify-items: center;
+        padding: 3rem;
+        grid-template-rows: auto;
+   
+
+}}}
