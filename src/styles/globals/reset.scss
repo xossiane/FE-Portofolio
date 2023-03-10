@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+*::li{
+  display: none;
+}
+
 /* Remove default margin */
 body,
 html,
