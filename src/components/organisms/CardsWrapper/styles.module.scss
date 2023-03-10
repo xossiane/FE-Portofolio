@@ -1,5 +1,6 @@
 .CardsWrapper{
    
+   
 &__container{
   padding: 3rem;
 
@@ -17,13 +18,19 @@
 }
     @include respond-to("lg"){ 
       
-        grid-template-columns: auto ;
+        grid-template-columns: 1fr 1fr 1fr;
         display: inline-grid;
-        row-gap: 2.4rem;
-        column-gap: 3rem;
+        row-gap: 2rem;
+        column-gap: 2rem;
         justify-items: center;
-        padding: 3rem;
+        padding: 20rem;
         grid-template-rows: auto;
    
 
-}}}
+}}
+&__bg{
+  background-color: $orange-lighter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}}

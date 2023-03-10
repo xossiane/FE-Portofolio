@@ -2,9 +2,11 @@ import React from 'react'
 import styles from './styles.module.scss'
 import Heading from '@/components/atoms/Heading';
 import Tag from '@/components/atoms/Tag';
+import SectionTitle from '../SectionTitle';
 
 function Card({title, img, label, isDefault = false}) {
   return (
+    
     <div className={`${styles.Card} ${styles[isDefault ? "Card--isDefault" : ""]}`}>
         <section className={styles.Card__container}>
             <img alt="image"
@@ -19,6 +21,7 @@ function Card({title, img, label, isDefault = false}) {
 </span>
         </section>
     </div>
+    
   )
 }
 
