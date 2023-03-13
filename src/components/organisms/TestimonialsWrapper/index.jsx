@@ -1,6 +1,4 @@
-import Heading from '@/components/atoms/Heading'
 import SectionTitle from '@/components/molecules/SectionTitle'
-
 import Testimonials from '@/components/molecules/Testimonials'
 import React from 'react'
 import styles from './styles.module.scss'

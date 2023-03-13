@@ -7,6 +7,7 @@ export default function Heading({
   format,
   level,
   children,
+  align,
   pageTitle = false,
   
 }) {
@@ -15,6 +16,7 @@ export default function Heading({
   classList.push(styles[`heading--${color}`]);
   classList.push(styles[`heading--${format}`]);
   classList.push(styles[`heading--H${level}`]);
+  classList.push(styles[`heading--${align}`]);
   classList.push(styles[`heading--${pageTitle === true ? "pageTitle" : ""}`]);
 
 
