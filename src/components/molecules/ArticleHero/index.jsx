@@ -37,7 +37,7 @@ function ArticleHero({ title, subtitle, desc, img }) {
           <Heading level="5" color="darkOrange" align="left">
             CLIENT
           </Heading>
-          <img src={img} alt="img" />
+          <img src={img}  className={styles.ArticleHero__img} alt="img" />
         </div>
 
         <span className={styles.ArticleHero__date}>

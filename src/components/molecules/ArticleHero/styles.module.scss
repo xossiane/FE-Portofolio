@@ -7,6 +7,9 @@
         flex-direction: column;
         position: relative;
         padding-top: 6rem;
+        @include respond-to ("md"){
+            padding-top: 0;
+        }
     
     }
     &__title{
@@ -16,17 +19,42 @@
     &__client{
         padding-top: 2.4rem;
         padding-bottom: 2.4rem;
+        @include respond-to ("md"){
+           grid-column-start: 2;
+           padding: 0;
+           display: flex;
+           flex-direction: column;
+           
+            
+        }
 
     }
     &__date{
         padding-top: 2.4rem;
         padding-bottom: 2.4rem;
+        @include respond-to("md"){
+            grid-column-start: 2;
+        }
     }
     
     &__content{
     @include respond-to ("md"){
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-row: auto;
+        grid-template-columns: 1fr;
+        justify-items: start;
+        padding-top: 5.4rem;
+        width: 50%;
+        margin: 0 auto;
+        
     }}
+
+    @include respond-to ("md"){
+        display: grid;
+       
+        
+    }
+
+    &__img{
+margin-top: 2rem;
+    }
 }

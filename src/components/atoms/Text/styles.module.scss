@@ -18,6 +18,11 @@ size: 14px, 18px, 22px;
   &--small {
     font-size: 1.6rem;
     line-height: 3.2rem;
+    @include respond-to("md"){
+      font-size: 2rem;
+      
+      line-height: 3.8rem;
+    }
   }
   &--XSmall {
     font-size: 1.4rem;
