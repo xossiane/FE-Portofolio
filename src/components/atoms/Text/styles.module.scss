@@ -17,6 +17,7 @@ size: 14px, 18px, 22px;
   }
   &--small {
     font-size: 1.6rem;
+    line-height: 3.2rem;
   }
   &--XSmall {
     font-size: 1.4rem;
@@ -24,6 +25,7 @@ size: 14px, 18px, 22px;
 
   &--black {
     color: $black;
+    
   }
   &--darkBrown {
     color: $brown-dark;

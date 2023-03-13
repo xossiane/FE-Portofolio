@@ -1,0 +1,32 @@
+.ArticleHero{
+    padding: 2.3rem 1.7rem;
+    background-color: $orange-lighter;
+
+    &__category{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 6rem;
+    
+    }
+    &__title{
+        padding: 1.15rem 0;
+        padding-top: 2.4rem;
+    }
+    &__client{
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+
+    }
+    &__date{
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+    }
+    
+    &__content{
+    @include respond-to ("md"){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-row: auto;
+    }}
+}
