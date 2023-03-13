@@ -17,7 +17,7 @@ export default function Footer() {
         <div className={styles.footer__contentText}>
             {menu.map((item) => 
             
-                <Text size="medium" color="darkBrown">{item}</Text>
+                <Text key={item} size="medium" color="darkBrown">{item}</Text>
             
             )}
         </div>
@@ -28,7 +28,7 @@ export default function Footer() {
         <div className={styles.footer__contentText}>
             {service.map((item) => 
             
-                <Text size="medium" color="darkBrown">{item}</Text>
+                <Text key={item} size="medium" color="darkBrown">{item}</Text>
            
             )}
         </div>
@@ -45,7 +45,13 @@ export default function Footer() {
         
       </div>
       <span className={styles.footer__copyright}>
-      <Text color="lightBrown">Copyright © 2022 Laaqiq. All Rights Reserved.</Text> <Text>Terms of Use</Text>  <Text>Privacy Policy</Text>
+        <span className={styles.footer__copyrightHR}></span>
+      <Text color="lightBrown">Copyright © 2022 Laaqiq. All Rights Reserved.</Text> 
+      <span className={styles.footer__copyrightContent}>
+        
+      <Text>Terms of Use</Text>  <Text>Privacy Policy</Text>
+      </span>
+    
       </span>
     
     </footer>
