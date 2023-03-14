@@ -1,6 +1,7 @@
 .ArticleHero{
-    padding: 2.3rem 1.7rem;
+    
     background-color: $orange-lighter;
+    
 
     &__category{
         display: flex;
@@ -43,7 +44,7 @@
         grid-template-columns: 1fr;
         justify-items: start;
         padding-top: 5.4rem;
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         
     }}
@@ -57,4 +58,14 @@
     &__img{
 margin-top: 2rem;
     }
+   
+&__container{
+     padding: 2.4rem;
+    @include respond-to ("lg"){
+        padding: 17rem;
+        max-width: 74%;
+        margin: 0 auto;
+    }
+    
+}
 }

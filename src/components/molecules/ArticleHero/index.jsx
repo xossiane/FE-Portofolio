@@ -13,6 +13,7 @@ function ArticleHero({ title, subtitle, desc, img }) {
   ];
   return (
     <div className={styles.ArticleHero}>
+      <div className={styles.ArticleHero__container}>
       <Heading level="2" pageTitle={false} color="darkBrown" align="left">
         {title}
       </Heading>
@@ -48,6 +49,7 @@ function ArticleHero({ title, subtitle, desc, img }) {
             25. FEB. 23
           </Text>
         </span>
+      </div>
       </div>
     </div>
   );

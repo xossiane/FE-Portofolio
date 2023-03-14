@@ -1,8 +1,6 @@
 import CCWrapper from "@/components/organisms/CCWrapper";
 import Hero from "@/components/molecules/Hero";
-import Testimonial from "@/components/molecules/Testimonials";
 import TestimonialsWrapper from "@/components/organisms/TestimonialsWrapper";
-import Card from "@/components/molecules/Card";
 import CardsWrapper from "@/components/organisms/CardsWrapper";
 import ArticleHero from "@/components/molecules/ArticleHero";
 
