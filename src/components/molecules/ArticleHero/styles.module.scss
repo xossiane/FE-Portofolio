@@ -1,0 +1,71 @@
+.ArticleHero{
+    
+    background-color: $orange-lighter;
+    
+
+    &__category{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 6rem;
+        @include respond-to ("md"){
+            padding-top: 0;
+        }
+    
+    }
+    &__title{
+        padding: 1.15rem 0;
+        padding-top: 2.4rem;
+    }
+    &__client{
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+        @include respond-to ("md"){
+           grid-column-start: 2;
+           padding: 0;
+           display: flex;
+           flex-direction: column;
+           
+            
+        }
+
+    }
+    &__date{
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+        @include respond-to("md"){
+            grid-column-start: 2;
+        }
+    }
+    
+    &__content{
+    @include respond-to ("md"){
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: start;
+        padding-top: 5.4rem;
+        width: 100%;
+        margin: 0 auto;
+        
+    }}
+
+    @include respond-to ("md"){
+        display: grid;
+       
+        
+    }
+
+    &__img{
+margin-top: 2rem;
+    }
+   
+&__container{
+     padding: 2.4rem;
+    @include respond-to ("lg"){
+        padding: 17rem;
+        max-width: 74%;
+        margin: 0 auto;
+    }
+    
+}
+}
