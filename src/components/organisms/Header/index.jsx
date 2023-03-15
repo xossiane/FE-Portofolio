@@ -17,7 +17,7 @@ export default function Header() {
         <a href="#home">
           <img
             className={styles[`header__logo`]}
-            src={logo}
+            src="/logo.png"
             alt="go back to homescreen page"
           />
         </a>

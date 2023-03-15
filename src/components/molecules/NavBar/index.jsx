@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import React, { useState } from "react";
 
-
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 export default function NavBar() {
   const [showMenu, setShowMenu] = useState(true);
@@ -21,40 +21,36 @@ export default function NavBar() {
             </li> */}
             <li className={styles[`nav__item`]}>
 
-              <a href="#quemsomos" className={styles[`nav__link`]}>Quem somos</a>
+              <a href="#quemsomos" className={styles[`nav__link`]}>About</a>
 
             </li>
             <li className={styles[`nav__item`]}>
 
-              <a href="#servicos" className={styles[`nav__link`]}>Serviços</a>
+              <a href="#servicos" className={styles[`nav__link`]}>Services</a>
 
             </li>
             <li className={styles[`nav__item`]}>
 
-              <a href="#clientes" className={styles[`nav__link`]}>Clientes</a>
+              <a href="#clientes" className={styles[`nav__link`]}>Pricing</a>
 
             </li>
             <li className={styles[`nav__item`]}>
 
-              <a href="#depoimentos" className={styles[`nav__link`]}>Depoimentos</a>
+              <a href="#depoimentos" className={styles[`nav__link`]}>Blog</a>
 
             </li>
-            <li className={styles[`nav__item`]}>
-
-              <a href="#responsabilidadesocial" className={styles[`nav__link`]}>Responsabilidade Social</a>
-
-            </li>
-            <li className={styles[`nav__item`]}>
-
-              <a href="#contato" className={styles[`nav__link`]}>Contato</a>
-
-            </li>
+         
           </ul>
           <ul className={styles[`nav__list--mobile`]}>
             {showMenu ? (
-              <div className={styles[`nav__open`]}
-              onClick={() => setShowMenu(false)}> oi
-              </div>
+               
+              <button className={styles[`nav__open`]}
+              onClick={() => setShowMenu(false)}> 
+              <svg width="40" height="48">
+              <use href="#menu" xlinkHref="#menu" />
+            </svg>
+            <GiHamburgerMenu></GiHamburgerMenu>
+              </button>
              
             ) : (
               <>

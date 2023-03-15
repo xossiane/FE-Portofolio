@@ -5,55 +5,52 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #EFF0F4;
+    background-color: $blue-dark;
     margin: 0 auto;
     padding: 0 0.75rem;
     height: 8.6rem;
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.6);
     
-  
-    @media (min-width: 1024px) {
-      height: fit-content;
-      position: fixed;
-      padding: 0;
-    }
-  
+  @include respond-to("lg"){
+  height: fit-content;
+  position: fixed;
+  padding: 0;}
+
     &__internal {
       box-sizing: border-box;
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      @media (min-width: 1024px) {
+      @include respond-to("lg"){
         margin: 0 auto;
-        width: 90rem;
+        padding: 0 13.5rem;
         height: fit-content;
-      }
-      @media (min-width: 1440px) {
-        width: 128rem;
-      }
-    }
+      
+        @include respond-to("xxl"){
+          width: 128rem;
+        }
+
+    }}
   
     &__logo {
-      margin-left: 80%;
+     
       height: auto;
-      width: 18rem;
+      width: 15rem;
       cursor: pointer;
-      
-      @media (min-width: 1024px) {
-       display: flex;
-       position: relative;
-       margin: 0;
-       height: 10rem;
-        
+      display: flex;
+      @include respond-to("lg"){
+        display: flex;
+        position: relative;
+        margin: 0;
+        margin-left: 0;
       }
     }
   
     &__nav {
-      @media (min-width: 1024px) {
-        width: 70rem;
-      }
-      @media (min-width: 1024px) {
+   
+      @include respond-to ("lg"){
+        width: 100%;
         width: 115rem;
       }
     }
