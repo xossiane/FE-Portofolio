@@ -4,41 +4,27 @@ export default function Svg() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" className={styles.svg}>
       <defs>
-        <symbol id="description" fill="none">
-          <title>Description</title>
-          <path
-            d="M14 6V26"
-            stroke="black"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M18 9H29C29.2652 9 29.5196 9.10536 29.7071 9.29289C29.8946 9.48043 30 9.73478 30 10V22C30 22.2652 29.8946 22.5196 29.7071 22.7071C29.5196 22.8946 29.2652 23 29 23H18"
-            stroke="black"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M14 23H3C2.73478 23 2.48043 22.8946 2.29289 22.7071C2.10536 22.5196 2 22.2652 2 22V10C2 9.73478 2.10536 9.48043 2.29289 9.29289C2.48043 9.10536 2.73478 9 3 9H14"
-            stroke="black"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M6.25 14H9.75"
-            stroke="black"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M8 14V18.5"
-            stroke="black"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
+        <symbol id="close"  viewBox="0 0 50 50"fill="transparent" >
+          <title>close</title>
+          
+            <path
+              d="M23.4375 7.0625L6.5625 23.9375"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M23.4375 23.9375L6.5625 7.0625"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+         
         </symbol>
 
-        <symbol id="grid" viewBox="0 0 50 50" fill="none">
+        <symbol id="grid" viewBox="0 0 50 50" fill="transparent">
           <title>Grid</title>
           <path
             d="M21.875 8.37988H9.375V19.5531H21.875V8.37988Z"

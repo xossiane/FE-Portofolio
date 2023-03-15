@@ -1,16 +1,28 @@
 import styles from "./styles.module.scss";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 export default function NavBar() {
   const [showMenu, setShowMenu] = useState(true);
+  const menuRef = useRef(null);
 
-  
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowMenu(true);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
 
   return (
     <nav className={styles[`nav`]} >
-      <div className={styles[`nav__internal`]}>
+      <div ref={menuRef} style={{ zIndex: 2 }} className={styles[`nav__internal`]}>
         <div className={styles[`nav__menu`]}>
           <ul className={styles[`nav__list`]}>
 
@@ -21,22 +33,22 @@ export default function NavBar() {
             </li> */}
             <li className={styles[`nav__item`]}>
 
-              <a href="#quemsomos" className={styles[`nav__link`]}>About</a>
+              <a href="#about" className={styles[`nav__link`]}>About</a>
 
             </li>
             <li className={styles[`nav__item`]}>
 
-              <a href="#servicos" className={styles[`nav__link`]}>Services</a>
+              <a href="#services" className={styles[`nav__link`]}>Services</a>
 
             </li>
             <li className={styles[`nav__item`]}>
 
-              <a href="#clientes" className={styles[`nav__link`]}>Pricing</a>
+              <a href="#pricing" className={styles[`nav__link`]}>Pricing</a>
 
             </li>
             <li className={styles[`nav__item`]}>
 
-              <a href="#depoimentos" className={styles[`nav__link`]}>Blog</a>
+              <a href="#blog" className={styles[`nav__link`]}>Blog</a>
 
             </li>
          
@@ -49,7 +61,6 @@ export default function NavBar() {
               <svg width="40" height="48">
               <use href="#menu" xlinkHref="#menu" />
             </svg>
-            <GiHamburgerMenu></GiHamburgerMenu>
               </button>
              
             ) : (
@@ -59,49 +70,52 @@ export default function NavBar() {
                   className={styles[`nav__close`]}
                   onClick={() => setShowMenu(true)}
                 >
-                oi
+               <svg width="50" height="58">
+              <use href="#close" xlinkHref="#close" />
+            </svg>
                 </div>
+                
                 <li className={styles[`nav__item`]}>
 
                   <a
-                  href="#home"
+                  href="#about"
                     className={styles[`nav__link`]}
                     onClick={() => setShowMenu(true)}
                   >
-                    Home
+                    About
                   </a>
 
                 </li>
                 <li className={styles[`nav__item`]}>
 
                   <a
-                  href="#servicos"
+                  href="#services"
                     className={styles[`nav__link`]}
                     onClick={() => setShowMenu(true)}
                   >
-                    Serviços
+                    Services
                   </a>
 
                 </li>
                 <li className={styles[`nav__item`]}>
 
                   <a
-                  href="#quemsomos"
+                  href="#pricing"
                     className={styles[`nav__link`]}
                     onClick={() => setShowMenu(true)}
                   >
-                    Quem Somos
+                    Pricing
                   </a>
 
                 </li>
                 <li className={styles[`nav__item`]}>
 
                   <a
-                  href="#contato"
+                  href="#blog"
                     className={styles[`nav__link`]}
                     onClick={() => setShowMenu(true)}
                   >
-                    Contato
+                    Blog
                   </a>
 
                 </li>
