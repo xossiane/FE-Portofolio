@@ -1,0 +1,135 @@
+.nav {
+    font-family: Sansita;
+    box-sizing: border-box;
+    background-color: #EFF0F4;
+    margin: 0 auto;
+    padding: 0;
+    height: 7.7rem;
+  
+  
+    @media (min-width: 1024px) {
+      width: 100%;
+      height: fit-content;
+      position: relative;
+      padding: 0;
+    }
+  
+    &__internal {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+  
+      @media (min-width: 1024px) {
+        margin: 0 auto;
+        height: fit-content;
+        padding: 0;
+        margin-left: 6rem;
+      }
+    }
+  
+    &__logo {
+      cursor: pointer;
+  
+      @media (min-width: 1024px) {
+        width: 13rem;
+      }
+    }
+  
+    &__list {
+      display: none;
+  
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 71rem;
+      }
+  
+      @media (min-width: 1440px) {
+        width: 109rem;
+      }
+  
+      &--mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 8.6rem;
+        padding: 0;
+  
+        @media (min-width: 1024px) {
+          display: none;
+        }
+      }
+    }
+  
+    &__item {
+      list-style: none;
+      padding: 3rem 1rem;
+      background: #EFF0F4;
+      border-bottom: 0.1rem solid gray;
+  
+      @media (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        max-width: 14rem;
+        text-align: center;
+        border-bottom: none;
+  
+        @media (min-width: 1440px) {
+          // margin-left: 3rem;
+          max-width: 11rem;
+        }
+      }
+    }
+  
+    &__link {
+      list-style: none;
+      font-size: 2rem;
+      line-height: 1.4rem;
+      color: #012D78;
+      cursor: pointer;
+      text-decoration: none;
+  
+      @media (min-width: 1024px) {
+        display: block;
+        text-decoration: none;
+        color: #012D78;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        cursor: pointer;
+        justify-content: space-between;
+      }
+    }
+  
+    &__open {
+      position: absolute;
+      border: none;
+      background: #EFF0F4;
+      top: -7rem;
+      left: 1rem;
+      transition: 5s ease-in-out;
+  
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+  
+    &__close {
+      position: absolute;
+      border: none;
+      background: #EFF0F4;
+      top: -7rem;
+      left: 1rem;
+      transition: 0.5s ease-in-out;
+  
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+  }

@@ -24,8 +24,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-router-dom": "^6.9.0",
     "react-spring": "^9.6.1",
-    "sass": "^1.58.0"
+    "sass": "^1.58.0",
+    "styled-component": "^2.8.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.0-beta.47",
