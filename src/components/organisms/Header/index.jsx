@@ -27,7 +27,7 @@ export default function Header() {
           <NavBar></NavBar>
          
         </div>
-        <span className={styles[`header__nav--btn`]}><Button color="blue" label="Contact"/></span>
+        <span className={styles[`header__nav--btn`]}><Button color="blue" label="CONTACT"/></span>
        
       </div>
     </header>

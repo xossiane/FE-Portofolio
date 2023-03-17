@@ -22,6 +22,7 @@ function Hero({ category, title, subtitle, description, variation, img, imgType 
             </source>
             <img
             src={`images/${img}@2x.${imgType}`}
+            className={styles.HeroVariation__img}
             alt=""
           />
           </picture>
@@ -63,6 +64,7 @@ function Hero({ category, title, subtitle, description, variation, img, imgType 
             className={styles.HeroVariation__img}>
             </source>
             <img
+            className={styles.HeroVariation__img}
             src={`images/${img}@2x.${imgType}`}
             alt=""
           />

@@ -3,13 +3,23 @@
     flex-direction: column;
     min-width: 100%;
     background-color: $orange-lighter;
-    
-    @media (min-width: 850px){
+    padding: 2.3rem;
+    @include respond-to("lg"){
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
+       
+    }
+    @include respond-to("xl"){
         display: flex;
         flex-direction: row;
         width: fit-content;
         margin: auto;
         justify-content: center;
+       
     }
+   
    
 }
