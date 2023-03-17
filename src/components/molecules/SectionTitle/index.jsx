@@ -11,7 +11,7 @@ function SectionTitle({ title, color, subtitle, isLeft = false }) {
           <Heading level="5"  color="darkOrange" pageTitle={true}>
             {subtitle}
           </Heading>
-          <Heading level="2" color={color} pageTitle={false} isLeft={true}>
+          <Heading level="2" color={color} align="left" pageTitle={false} isLeft={true}>
             {title}
           </Heading>
         </span>

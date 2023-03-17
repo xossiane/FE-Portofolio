@@ -3,15 +3,15 @@ import Hero from "@/components/molecules/Hero";
 import TestimonialsWrapper from "@/components/organisms/TestimonialsWrapper";
 import CardsWrapper from "@/components/organisms/CardsWrapper";
 import ArticleHero from "@/components/molecules/ArticleHero";
-
+import styles from "./styles.module.scss"
 
 export default function Home() {
   return (
-    <>
-      <p>Home</p>
+    <div className={styles.Home}>
      
       <Hero
-        img="/hero.png"
+        img="hero"
+        imgType="png"
         category="ABOUT"
         title="An Experience 
 Design Agency"
@@ -23,7 +23,8 @@ Design Agency"
      <TestimonialsWrapper /> 
     <CardsWrapper></CardsWrapper>
     <Hero
-        img="/hero2.png"
+        img="hero2"
+        imgType="png"
         category="ABOUT"
         title="An Experience 
         Webflow Expert"
@@ -32,6 +33,6 @@ Design Agency"
         variation="variation"
       ></Hero>
 
-    </>
+    </div>
   );
 }
