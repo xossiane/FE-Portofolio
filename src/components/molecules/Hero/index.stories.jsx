@@ -1,5 +1,5 @@
 import Hero from '.'
-import hero from '../../../../public/hero.png'
+import hero from '../../../../public/images/hero@2x.png'
 
 export default {
     title: "molecules/Hero",
