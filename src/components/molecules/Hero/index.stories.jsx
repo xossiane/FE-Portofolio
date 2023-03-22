@@ -1,21 +1,19 @@
-import Hero from '.'
-import hero from '../../../../public/images/hero@2x.png'
+import Hero from '.';
+/* import hero from '../../../../public/images/hero.png' */
+
 
 export default {
-    title: "molecules/Hero",
-    component: Hero,
-   /*  args: {
-        category: "ABOUT",
-        title: "THIS IS A TITLE",
-        description: "lorem lorem lorem lorem lorem lorem",
-        variation: false,
-        img: "public/hero.png"
-    } */
-    
-}
+        title: 'molecules/Hero',
+        component: Hero,
+        // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/7.0/react/writing-docs/docs-page
+        tags: ['autodocs'],
+        parameters: {
+          // More on how to position stories at: https://storybook.js.org/docs/7.0/react/configure/story-layout
+          layout: 'fullscreen',
+        },
+      };
 
-
-const Template = (args) => <Hero {... args} />
+const Template = (args) => <div style={{zoom: 0.7}}><Hero {... args} /> </div>
 
 export const Default = Template.bind({});
 Default.args = {
@@ -24,31 +22,35 @@ Default.args = {
         title: "THIS IS A TITLE",
         description: "lorem lorem lorem lorem lorem lorem",
         variation: false,
-        img: hero,
+        img: "hero",
+        imgType: "png"
         
     
 };
 
-export const NoTitle = Template.bind({});
+/* export const NoTitle = Template.bind({});
 NoTitle.args = {
   
         category: "ABOUT",
         title: "",
         description: "lorem lorem lorem lorem lorem lorem",
         variation: false,
-        img: hero
+        img: "hero"
     
-};
+}; */
 
 
-export const NoDesc = Template.bind({});
-NoDesc.args = {
+export const Variation = Template.bind({});
+Variation.args = {
   
         category: "ABOUT",
         title: "THIS IS A TITLE",
-        description: "",
-        variation: false,
-        img: hero
+        description: "lorem lorem lorem lorem lorem lorem",
+        variation: true,
+        img: "hero2",
+        imgType: "png"
     
 };
+
+/* export const withAnImage = () => <img src={hero.src} alt={hero.alt} />; */
 

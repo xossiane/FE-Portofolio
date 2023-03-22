@@ -20,13 +20,13 @@ export default function Button({
 
   return (
     <Link href={`${href}`}>
-      <p
+      <button
         className={`${classList.join(" ")} ${className}`}
         onClick={handleClick}
       >
         
       {label}
-      </p>
+      </button>
     </Link>
   );
 }
