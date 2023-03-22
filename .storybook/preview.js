@@ -8,5 +8,12 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+    grid: {
+      gridOn: true,
+      columns: 12,
+      gap: '20px',
+      gutter: '50px',
+      maxWidth: '1024px',
+    },
   },
 }

@@ -24,5 +24,7 @@ const Template2 = (args) => <div style={{zoom: 0.6, width: '70rem'}}><CardsWrapp
 
 export const Mobile = Template2.bind({});
 Mobile.args = {
-
+grid: {
+    columns: 1
+}
 };

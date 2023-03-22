@@ -27,6 +27,7 @@
     "react-router-dom": "^6.9.0",
     "react-spring": "^9.6.1",
     "sass": "^1.58.0",
+    "storybook-addon-grid": "^0.3.1",
     "styled-component": "^2.8.0"
   },
   "devDependencies": {
