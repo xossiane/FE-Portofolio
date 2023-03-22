@@ -13,12 +13,12 @@ export default {
 };
 
 
-const Template = (args) => <Testimonials {... args} />
+const Template = (args) => <div style={{zoom: 0.7, width: '100rem'}}><Testimonials {... args} /></div>
 
 export const Default = Template.bind({});
 Default.args = {
  img: garnet,
-        text:"lorem lorem lorem"
+        text:"A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you."
         
     
 };

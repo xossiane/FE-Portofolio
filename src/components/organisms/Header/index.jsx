@@ -1,7 +1,5 @@
 import styles from "./styles.module.scss";
-import React, { useState } from "react";
-
-import logo from "../../../../public/logo.png"
+import React from "react";
 import NavBar from "../../molecules/NavBar";
 import Button from "@/components/atoms/Button";
 

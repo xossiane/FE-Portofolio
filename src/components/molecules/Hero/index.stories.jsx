@@ -52,5 +52,5 @@ Variation.args = {
     
 };
 
-/* export const withAnImage = () => <img src={hero.src} alt={hero.alt} />; */
+
 
