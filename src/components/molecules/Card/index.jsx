@@ -8,7 +8,8 @@ function Card({title, img, label, isDefault = false}) {
   return (
     
     <div className={`${styles.Card} ${styles[isDefault ? "Card--isDefault" : ""]}`}>
-        <section className={styles.Card__container}>
+        <article className={styles.Card__container} role="article"
+        aria-label="cards categories" tabIndex={0}>
             <img alt="image"
             className={styles.Card__img}
             src={img}></img>
@@ -19,7 +20,7 @@ function Card({title, img, label, isDefault = false}) {
         </Heading>
         
 </span>
-        </section>
+        </article>
     </div>
     
   )

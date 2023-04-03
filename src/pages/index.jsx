@@ -11,7 +11,7 @@ export default function Home() {
      
       <Hero
         img="hero"
-        imgType="png"
+        imgType="webp"
         category="ABOUT"
         title="An Experience 
 Design Agency"
@@ -24,7 +24,7 @@ Design Agency"
     <CardsWrapper></CardsWrapper>
     <Hero
         img="hero2"
-        imgType="png"
+        imgType="webp"
         category="ABOUT"
         title="An Experience 
         Webflow Expert"

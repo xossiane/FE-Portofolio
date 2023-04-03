@@ -6,8 +6,8 @@ import React from "react";
 import styles from "./styles.module.scss";
 import SectionTitle from "../SectionTitle";
 
-function Hero({ category, title, subtitle, description, variation, img, imgType }) {
-  const classList = [];
+function Hero({ subtitle, description, variation, img, imgType }) {
+
 
   return (
     <>
@@ -59,7 +59,7 @@ function Hero({ category, title, subtitle, description, variation, img, imgType 
           <picture>
             <source
             srcSet={`images/${img}@2x.${imgType}`}
-            media="(min-width: 992px)"
+            media="(min-width: 992px) 100vw"
             alt="Hero"
             className={styles.HeroVariation__img}>
             </source>

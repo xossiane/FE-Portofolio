@@ -56,8 +56,8 @@ export default function NavBar() {
           <ul className={styles[`nav__list--mobile`]}>
             {showMenu ? (
                
-              <button className={styles[`nav__open`]}
-              onClick={() => setShowMenu(false)}> 
+              <button className={styles[`nav__buttonOpen`]}
+              onClick={() => setShowMenu(false)} aria-label="open button" role="button"> 
               <svg width="40" height="48">
               <use href="#menu" xlinkHref="#menu" />
             </svg>
@@ -66,19 +66,21 @@ export default function NavBar() {
             ) : (
               <>
 
-                <div
-                  className={styles[`nav__close`]}
+                <button
+                  className={styles[`nav__buttonClose`]}
                   onClick={() => setShowMenu(true)}
+                  role="button"
+                  aria-label="open button"
                 >
                <svg width="50" height="58">
-              <use href="#close" xlinkHref="#close" />
+              <use href="#close"  xlinkHref="#close" />
             </svg>
-                </div>
+                </button>
                 
                 <li className={styles[`nav__item`]}>
 
                   <a
-                  href="#about"
+                    href="#about"
                     className={styles[`nav__link`]}
                     onClick={() => setShowMenu(true)}
                   >

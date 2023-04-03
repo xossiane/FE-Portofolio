@@ -36,9 +36,9 @@ export default function Footer() {
         
         <span className={styles.footer__content}>
         <span className={styles.footer__contentIcon}>
-       <span className={styles.footer__iconContainer}> <BsInstagram className={styles.footer__icon}></BsInstagram></span> 
-       <span className={styles.footer__iconContainer}> <BsTwitter className={styles.footer__icon}></BsTwitter></span>
-       <span className={styles.footer__iconContainer}> <BsFacebook className={styles.footer__icon}></BsFacebook></span>  
+       <a className={styles.footer__iconContainer} role="link" tabIndex={0}> <BsInstagram className={styles.footer__icon}></BsInstagram></a> 
+       <a className={styles.footer__iconContainer} role="link" tabIndex={0}> <BsTwitter className={styles.footer__icon}></BsTwitter></a>
+       <a className={styles.footer__iconContainer} role="link" tabIndex={0}> <BsFacebook className={styles.footer__icon}></BsFacebook></a>  
   </span>
        
         </span>

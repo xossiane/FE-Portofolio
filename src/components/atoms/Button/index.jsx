@@ -23,6 +23,7 @@ export default function Button({
       <button
         className={`${classList.join(" ")} ${className}`}
         onClick={handleClick}
+        role="button"
       >
         
       {label}

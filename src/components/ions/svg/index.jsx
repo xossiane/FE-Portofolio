@@ -10,16 +10,16 @@ export default function Svg() {
             <path
               d="M23.4375 7.0625L6.5625 23.9375"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M23.4375 23.9375L6.5625 7.0625"
               stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
          
         </symbol>
